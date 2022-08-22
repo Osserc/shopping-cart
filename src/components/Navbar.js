@@ -8,9 +8,15 @@ function Navbar() {
                 <Link to="">
                     <li>Home</li>
                 </Link>
-                <li>Shop</li>
-                <li>About</li>
-                <li>Cart</li>
+                <Link to="shop">
+                    <li>Shop</li>
+                </Link>
+                <Link to="about">
+                    <li>About</li>
+                </Link>
+                <Link to="cart">
+                    <li>Cart</li>
+                </Link>
             </ul>
         </nav>
     )
