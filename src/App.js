@@ -6,6 +6,7 @@ import { Homepage } from './components/Homepage'
 function App() {
   return (
     <BrowserRouter>
+    <Navbar />
       <Routes>
         <Route path="" element={<Homepage />}></Route>
         {/* <Route path="about" element={<About />}></Route>
