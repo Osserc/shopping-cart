@@ -3,7 +3,7 @@ body {
   margin: 0;
 }
 
-/* reusable classe */
+/* reusable classes */
 .flex {
   display: flex;
 }
@@ -38,6 +38,30 @@ body {
 
 .p-15 {
   padding: 15px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.W-50 {
+  width: 50%;
+}
+
+.m-auto {
+  margin: auto;
 }
 
 /* base config */
