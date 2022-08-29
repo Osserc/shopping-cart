@@ -38,7 +38,8 @@ function App() {
   }
 
   function handleMinus(selectedProduct) {
-    if (checkPresence(selectedProduct) === false) {
+    if (checkPresence(selectedProduct) === false) return
+    if (findInCart(selectedProduct).quantity === 1) {
       removeItem(selectedProduct)
     } else {
       decrementItem(selectedProduct)
@@ -63,7 +64,7 @@ function App() {
   }
 
   function removeItem(selectedProduct) {
-    setCart(cart => cart.filter((product) => product !== selectedProduct))
+    setCart(cart => cart.filter((item) => item.product !== selectedProduct))
   }
 
   function decrementItem(selectedProduct) {
@@ -83,6 +84,10 @@ function App() {
   function checkPresence(selectedProduct) {
     if (cart.filter((item) => item.product === selectedProduct).length !== 0) return true
     return false
+  }
+
+  function findInCart(selectedProduct) {
+    return cart.find((item) => item.product === selectedProduct)
   }
 
   return (
