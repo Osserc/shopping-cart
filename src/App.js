@@ -91,7 +91,7 @@ function App() {
       <Routes>
         <Route path="" element={<Homepage />}></Route>
         <Route path="about" element={<About />}></Route>
-        <Route path="shop" element={<Shop handleCart={handleCart} />}></Route>
+        <Route path="shop" element={<Shop cart={cart} handleCart={handleCart} />}></Route>
         <Route path="cart" element={<Cart />}></Route>
       </Routes>
     </BrowserRouter>
