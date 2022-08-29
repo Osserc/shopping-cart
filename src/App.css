@@ -40,6 +40,10 @@ body {
   padding: 15px;
 }
 
+.p-5 {
+  padding: 5px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -60,8 +64,29 @@ body {
   width: 50%;
 }
 
+.w-fit {
+  width: fit-content;
+}
+
 .m-auto {
   margin: auto;
+}
+
+.card {
+  background-color: blanchedalmond;
+  border: 1px solid green;
+}
+
+.btn-plus {
+  background-color: green;
+}
+
+.btn-minus {
+  background-color: red;
+}
+
+.btn-box {
+  border: 1px solid goldenrod;
 }
 
 /* base config */
