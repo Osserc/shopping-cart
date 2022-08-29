@@ -90,9 +90,15 @@ function App() {
     return cart.find((item) => item.product === selectedProduct)
   }
 
+  function countItems() {
+    let count = cart.reduce((pV, cV) => pV + cV.quantity, 0)
+    if (count === 0) return null
+    return count
+  }
+
   return (
     <BrowserRouter>
-    <Navbar />
+    <Navbar itemsCount={countItems()} />
       <Routes>
         <Route path="" element={<Homepage />}></Route>
         <Route path="about" element={<About />}></Route>

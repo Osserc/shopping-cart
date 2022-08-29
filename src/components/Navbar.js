@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-function Navbar() {
+function Navbar(props) {
     return (
         <nav className="flex space-between align-center p-15">
             <div>MoneyGrabbers</div>
@@ -15,7 +15,7 @@ function Navbar() {
                     <li>About</li>
                 </Link>
                 <Link to="cart">
-                    <li>Cart</li>
+                    <li>{props.itemsCount} Cart</li>
                 </Link>
             </ul>
         </nav>

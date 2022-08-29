@@ -14,7 +14,7 @@ function Shop(props) {
                         {item.description}
                     </div>
                     <div>
-                        {item.price}
+                        {item.price}$
                     </div>
                     <OrderButton cart={props.cart} id={item.id} handleCart={props.handleCart} />
                 </ul>
