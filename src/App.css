@@ -36,6 +36,10 @@ body {
   gap: 15px;
 }
 
+.gap-5 {
+  gap: 5px;
+}
+
 .p-15 {
   padding: 15px;
 }
@@ -85,6 +89,10 @@ body {
   background-color: red;
 }
 
+.btn-remove {
+  background-color: orange;
+}
+
 .btn-box {
   border: 1px solid goldenrod;
 }
@@ -96,6 +104,10 @@ html, body, #root {
 }
 
 /* CSS proper */
+
+:disabled {
+  opacity: 0.8;
+}
 
 nav {
 

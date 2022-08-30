@@ -17,7 +17,7 @@ function App() {
         <Route path="" element={<Homepage />}></Route>
         <Route path="about" element={<About />}></Route>
         <Route path="shop" element={<Shop cart={useCart.cart} handleCart={useCart.handleCart} />}></Route>
-        <Route path="cart" element={<Cart />}></Route>
+        <Route path="cart" element={<Cart cart={useCart.cart} handleCart={useCart.handleCart} />}></Route>
       </Routes>
     </BrowserRouter>
   );

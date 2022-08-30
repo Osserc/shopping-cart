@@ -11,11 +11,14 @@ const CartLogic = () => {
     function handleCart(event) {
         let selectedProduct = products.find((item) => item.id === +event.target.dataset.id)
         switch (event.target.dataset.action) {
-            case 'add':
+            case 'plus':
             handlePlus(selectedProduct)
             break;
-            case 'remove':
+            case 'minus':
             handleMinus(selectedProduct)
+            break;
+            case 'remove':
+            removeItem(selectedProduct)
             break;
             default:
             clearCart()

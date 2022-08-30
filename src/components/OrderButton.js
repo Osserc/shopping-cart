@@ -13,10 +13,11 @@ function OrderButton(props) {
     }
 
     return (
-        <div className='flex justify-center align-center btn-box p-5 w-fit'>
-            <button className='btn-plus' data-action='add' data-id={props.id} onClick={props.handleCart}>+</button>
+        <div className='flex justify-center align-center btn-box p-5 gap-5 w-fit'>
+            <button className='btn-plus' data-action='plus' data-id={props.id} onClick={props.handleCart}>+</button>
             <div className='p-5'>{findQuantity(props.id)}</div>
-            <button className='btn-minus' data-action='remove' data-id={props.id} onClick={props.handleCart}>-</button>
+            <button className='btn-minus' data-action='minus' data-id={props.id} onClick={props.handleCart}>-</button>
+            <button className='btn-remove' data-action='remove' data-id={props.id} onClick={props.handleCart} disabled={!checkPresence(props.id)}>Remove</button>
         </div>
     )
 }
