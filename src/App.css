@@ -80,6 +80,10 @@ body {
   margin: auto;
 }
 
+.m-0 {
+  margin: 0;
+}
+
 .mb-15 {
   margin-bottom: 15px;
 }
@@ -87,8 +91,15 @@ body {
 .card {
   background-color: blanchedalmond;
   border: 1px solid green;
-  width: 300px;
-  height: 200px;
+  width: 270px;
+}
+
+.card-shop {
+  height: 300px;
+}
+
+.card-cart {
+  height: 100px;
 }
 
 .btn-plus {
@@ -107,7 +118,7 @@ body {
   background-color: yellow;
 }
 
-.btn-box {
+.box {
   border: 1px solid goldenrod;
 }
 

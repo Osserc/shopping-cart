@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 function About() {
     return (
-        <div>
+        <div className='flex flex-c justify-center align-center'>
             <p>MoneyGrabbers is the ultimate online shopping experience: we get your money, and you get to spend it from the comfort of your own home!</p>
             <p>Crazy, right? They said it could not be done, and yet here we are, taking your money like there's no tomorrow.</p>
             <p>As a company, we are driven by the desire of getting as rich as possible by taking people's money, 

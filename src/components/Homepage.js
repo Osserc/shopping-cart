@@ -16,6 +16,7 @@ function Homepage() {
                 <p>And just give us all your money the old fashioned way!</p>
                 <img src='' alt='taking money'></img>
             </div>
+            <Link to='/shop'><button className='btn-generic'>Start now</button></Link>
         </div>
     )
 }

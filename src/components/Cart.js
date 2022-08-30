@@ -9,14 +9,16 @@ function Cart(props) {
     return (
         <div className='flex flex-c justify-center gap-15'>
             <div className='cards-container'>{props.cart.map((item) => {
-                return <div key={item.product.id} className='card'>
-                    <div>
+                return <div key={item.product.id} className='card card-cart flex flex-c space-around align-center p-15'>
+                    <h1 className='text-center m-0'>
                         {item.product.name}
+                    </h1>
+                    <div className='flex space-around align-center p-5 gap-15'>
+                        <div>
+                            {item.product.price * item.quantity}$
+                        </div>
+                        <OrderButton cart={props.cart} id={item.product.id} handleCart={props.handleCart} />
                     </div>
-                    <div>
-                        {item.product.price}$
-                    </div>
-                    <OrderButton cart={props.cart} id={item.product.id} handleCart={props.handleCart} />
                 </div>
             })}
             </div>

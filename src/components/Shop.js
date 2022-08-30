@@ -4,11 +4,11 @@ import { OrderButton } from './OrderButton'
 function Shop(props) {
     return (
         <div className='cards-container'>{products.map((item) => {
-            return <div key={item.id} className='card'>
-                <div>
+            return <div key={item.id} className='card card-shop flex flex-c space-around align-center p-15'>
+                <h1 className='text-center m-0'>
                     {item.name}
-                </div>
-                <div>
+                </h1>
+                <div className='text-center'>
                     {item.description}
                 </div>
                 <div>
@@ -19,5 +19,5 @@ function Shop(props) {
         })}</div>
     )
 }
-// flex justify-center align-center f-wrap gap-15
+
 export { Shop }
