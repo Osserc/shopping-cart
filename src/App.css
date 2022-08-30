@@ -93,6 +93,10 @@ body {
   background-color: orange;
 }
 
+.btn-done {
+  background-color: yellow;
+}
+
 .btn-box {
   border: 1px solid goldenrod;
 }
@@ -110,7 +114,10 @@ html, body, #root {
 }
 
 nav {
-
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: lightgreen;
 }
 
 nav ul {
