@@ -2,8 +2,13 @@ import { OrderButton } from './OrderButton'
 
 function Cart(props) {
     function thanks(event) {
-        alert('Thanks for giving us your money!')
+        alert('Thanks for giving us your money! We will thoroughly enjoy your ' + calcTotal() + ' dollars!')
         props.handleCart(event)
+    }
+
+    function calcTotal() {
+        let total = props.cart.reduce((pV, cV) => pV + (cV.product.price * cV.quantity), 0)
+        return total
     }
 
     return (
@@ -23,7 +28,10 @@ function Cart(props) {
             })}
             </div>
             {props.cart.length > 0 ?
-            <button className='btn-generic w-fit m-auto' data-action='clear' onClick={thanks}>Checkout</button>
+            <div className='flex flex-c justify-center align-center gap-5'>
+                <div><span className='t-bold'>Total</span>: {calcTotal()} $</div>
+                <button className='btn-generic w-fit' data-action='clear' onClick={thanks}>Checkout</button>
+            </div>
             :
             <div className='flex m-auto'>You have no products in your cart. Come on, gives us some money!</div>}
         </div> 

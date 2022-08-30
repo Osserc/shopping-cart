@@ -88,6 +88,24 @@ body {
   margin-bottom: 15px;
 }
 
+.t-bold {
+  font-weight: bold;
+}
+
+.box {
+  border: 1px solid goldenrod;
+}
+
+/* base config */
+
+html, body, #root {
+  width: 100%;
+  background-color: blanchedalmond;
+  box-sizing: border-box;
+}
+
+/* CSS proper */
+
 .card {
   background-color: blanchedalmond;
   border: 1px solid green;
@@ -118,20 +136,6 @@ body {
   background-color: yellow;
 }
 
-.box {
-  border: 1px solid goldenrod;
-}
-
-/* base config */
-
-html, body, #root {
-  width: 100%;
-  background-color: blanchedalmond;
-  box-sizing: border-box;
-}
-
-/* CSS proper */
-
 :disabled {
   opacity: 0.8;
 }
@@ -159,6 +163,15 @@ nav ul li {
   grid-template-columns: repeat(auto-fill, 300px);
   justify-content: center;
   gap: 15px;
+}
+
+a {
+  color: black;
+  font-weight: bold;
+}
+
+.counter {
+  text-decoration: underline;
 }
 
 @media (max-width: 500px) {
