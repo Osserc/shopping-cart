@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 function Navbar(props) {
     return (
-        <nav className="flex space-between align-center p-15">
+        <nav className="flex space-between align-center gap-15 p-15 mb-15">
             <div>MoneyGrabber$</div>
             <ul className="flex">
                 <Link to="">

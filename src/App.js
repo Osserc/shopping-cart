@@ -12,7 +12,7 @@ function App() {
 
   return (
     <BrowserRouter>
-    <Navbar itemsCount={useCart.countItems()} />
+      <Navbar itemsCount={useCart.countItems()} />
       <Routes>
         <Route path="" element={<Homepage />}></Route>
         <Route path="about" element={<About />}></Route>

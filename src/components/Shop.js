@@ -3,7 +3,7 @@ import { OrderButton } from './OrderButton'
 
 function Shop(props) {
     return (
-        <div className='products-container'>{products.map((item) => {
+        <div className='cards-container'>{products.map((item) => {
             return <div key={item.id} className='card'>
                 <div>
                     {item.name}
@@ -19,5 +19,5 @@ function Shop(props) {
         })}</div>
     )
 }
-
+// flex justify-center align-center f-wrap gap-15
 export { Shop }
